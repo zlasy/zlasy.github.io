@@ -1,6 +1,7 @@
 - [存储](#%e5%ad%98%e5%82%a8)
   - [存储分类](#%e5%ad%98%e5%82%a8%e5%88%86%e7%b1%bb)
   - [数据库分类](#%e6%95%b0%e6%8d%ae%e5%ba%93%e5%88%86%e7%b1%bb)
+  - [各类nosql比较 排名](#%e5%90%84%e7%b1%bbnosql%e6%af%94%e8%be%83-%e6%8e%92%e5%90%8d)
 
 # 存储
 
@@ -44,3 +45,10 @@
    - 文档型
    - 图数据库
    - 时序数据库
+
+## 各类nosql比较 [排名](https://db-engines.com/en/ranking)
+| 分类 | k-v | 列存储 | 文档型 | 图 | 时序 | 搜索引擎 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 代表 | redis<br>memcached | hbase<br>cassandra | mongodb<br>couchbase | neo4j | InfluxDB<br>prometheus | es<br>solr |
+| 场景 | 缓存 | 
+| 性能 | qps:8.5W
