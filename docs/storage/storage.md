@@ -47,8 +47,12 @@
    - 时序数据库
 
 ## 各类nosql比较 [排名](https://db-engines.com/en/ranking)
+
 | 分类 | k-v | 列存储 | 文档型 | 图 | 时序 | 搜索引擎 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 代表 | redis<br>memcached | hbase<br>cassandra | mongodb<br>couchbase | neo4j | InfluxDB<br>prometheus | es<br>solr |
-| 场景 | 缓存 | 
-| 性能 | qps:8.5W
+| 场景 | 缓存 | olap | 对数据库读写性能具有极高要求的应用场景 | oltp，多维关联分析 | 监控 | 文本搜索 |
+| 性能 | qps:8.5W | 根据带宽hbase写tps在5w~10w，读2w~3w | [mongo压测](https://blog.51cto.com/navyaijm/2421973) | 多级关系查询有优势 | 30w写入10w读 | [es压力测试](https://www.jianshu.com/p/e7de3b24f505) |
+
+[Mysql和MongoDB性能对比及应用场景分析--和上面的文章冲突](https://blog.csdn.net/zombres/article/details/82020931)  
+[DolphinDB与InfluxDB对比](https://zhuanlan.zhihu.com/p/42287416)
