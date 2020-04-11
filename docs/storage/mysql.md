@@ -24,7 +24,26 @@
    - `mysqladmin extended-status`
    - `mysql> SHOW VARIABLES;`
    - `mysql> SHOW STATUS;`
-4. 
+4. Server Log
+   - query log
+   - slow query log
+   - error log
+   - binary log
+5. Server Plugins
+   - Enterprise Thread Pool
+   - Rewriter Query Rewrite Plugin
+   - The ddl_rewriter Plugin
+   - The Clone Plugin
+6. Backup and Recovery
+   - Physical vs Logical
+   - Online vs Offline
+   - Local vs Remote
+   - Full vs Incremental vs Point-In-Time
+7. [Optimization](https://dev.mysql.com/doc/refman/8.0/en/optimization.html)
+8. [Data Type](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
+9. [Function & Operation](https://dev.mysql.com/doc/refman/8.0/en/func-op-summary-ref.html)
+10. The InnoDB Storage Engine
+
 ## cluster
 [ndb vs innodb](https://dev.mysql.com/doc/mysql-cluster-excerpt/5.7/en/mysql-cluster-ndb-innodb-engines.html)
 
