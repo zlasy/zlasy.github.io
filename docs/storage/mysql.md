@@ -5,7 +5,8 @@
   - [mysql workbench](#mysql-workbench)
   - [mysql shell](#mysql-shell)
   - [connectors & apis](#connectors--apis)
-- [reference](#reference)
+- [Relative Framework](#relative-framework)
+- [Reference](#reference)
 
 # mysql notes
 1. [mysql版本](https://blog.csdn.net/liang_0609/article/details/77334959)
@@ -57,7 +58,16 @@
      每张表单独记录文件（默认的）
      - Evaluating whether your data and access patterns benefit from the InnoDB table or page compression features. You can compress InnoDB tables without sacrificing read/write capability.
      - Running your server with the option --sql_mode=NO_ENGINE_SUBSTITUTION to prevent tables being created with a different storage engine if there is an issue with the engine specified in the ENGINE= clause of CREATE TABLE.
-
+   - [architecture](https://dev.mysql.com/doc/refman/8.0/en/innodb-architecture.html)   
+   ![](https://dev.mysql.com/doc/refman/8.0/en/images/innodb-architecture.png)
+   - InnoDB Limits
+     - 最大1017列
+     - 最多64个二级索引
+     - 不同的row format有不同的索引长度限制，3072或者767
+     - 索引里最多16列
+     - 一行的数据大小不能超过page size的一半，默认16KB的页大小，行限制就是8000bytes。但是对于64k的页大小，行大小限制是16k。LONGBLOB和LONGTEXT限制是4GB，同时行大小最大不能超过4GB
+     - 虽然innodb支持超过64k的行大小，但是mysql本身只支持到64k
+   - Replication
 
 
 ## cluster
@@ -72,6 +82,11 @@ innodb cluster的一部分
 
 ## connectors & apis
 
-# reference
+# Relative Framework
+- jpa
+- [mybatis]()
+- [sharding-sphere]()
+
+# Reference
 
 - [mysql document](https://dev.mysql.com/doc/)
